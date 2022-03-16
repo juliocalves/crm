@@ -1,0 +1,139 @@
+/* Estilos Gerais*/
+
+body, h1, h2, p, ul, li, a {
+    margin: 0px;
+    padding: 0px;
+}   
+
+body {
+    font-family: "Nunito",Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    min-height:73%;
+	position:relative;
+	width:960px;
+}
+
+ul {
+    list-style: none;   
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 2em;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    
+}
+
+.btn {
+    
+    text-align: center;
+    color: aliceblue;
+}
+
+.btn-danger{
+    background-color: crimson;
+}
+
+
+/* Menu */
+
+.menu_bg{
+    background: rgba(95, 158, 160, 0.863);
+}
+.menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.menu a {
+    color: whitesmoke;
+}
+
+.menu_logo a {
+    font-size: 2.25em;
+    font-weight: bold;
+    margin:0 10px; 
+}
+
+.menu_nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu_nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+}
+
+.menu_nav a:hover{
+    color: #222;
+}
+
+/* Main*/
+
+.content {
+    margin-top: 2em;
+    display: flex;
+    margin: auto;
+}
+
+
+/*Tabelas*/
+
+.table{
+    width: 100%;
+    text-align: center;
+}
+
+.table thead{font-weight: bold;}
+.table tbody tr:nth-child(2n){background: blueviolet;}
+
+
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    background: cadetblue;
+    height: 70px;
+    align-items:center;
+    margin-top: 2em;
+}
+
+.footer p {
+    flex: 1;
+    text-align: center;
+    font-size: 1.25em;
+    color:whitesmoke;
+}
