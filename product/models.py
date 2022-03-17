@@ -10,6 +10,5 @@ class Product(models.Model):
     sell_date = models.DateField(auto_now=True)
     active = models.BooleanField(default=True)
 
-
     class Meta:
         db_table = "PRODUCT"
