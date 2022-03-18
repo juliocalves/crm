@@ -1,31 +1,37 @@
 {% extends "model-page.html" %}
 
 {% block content %}
-    <h2>Leads</h2>
+<div class="content">
+    <div class="sub-menu">
+        <div>
+            <a href="#">Leads</a>
+            <a href="#">Prospects</a>            
+        </div>
+        <div>
 
-    <div class="container">
-        <table class="table table-border">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Cidade</th>
-                    <th>Telefone</th>
-                    <th>Email</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    {% for customer in customer_list %}
-                    <td> {{customer.get_full_name}} </td>
-                    <td> {{customer.get_full_city}} </td>
-                    <td> {{customer.get_full_phone_number}} </td>
-                    <td> {{customer.email}} </td>
-                    <td> <button type="button" class="btn btn-danger">Excluir</button></td>
-                    {% endfor %}
-                </tr>
-            </tbody>
-        </table>
+        </div>
     </div>
-
+    <div class="table">
+        <div class="table-header">
+            <div class="table-collum">Nome</div>
+            <div class="table-collum">Cidade</div>
+            <div class="table-collum">Telefone</div>
+            <div class="table-collum">Email</div>
+            <div class="table-collum">Ações</div>
+        </div>
+        <div class="table-row">
+            {% for customer in customer_list %}
+            <div class="table-collum"> {{customer.get_full_name}} </div>
+            <div class="table-collum"> {{customer.get_full_city}} </div>
+            <div class="table-collum"> {{customer.get_full_phone_number}} </div>
+            <div class="table-collum"> {{customer.email}} </div>
+            <div class="table-collum"> 
+                <button type="button" class="button button-danger">Contatar</button>
+                <button type="button" class="button button-danger">Editar</button>
+                <button type="button" class="button button-danger">Excluir</button>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 {% endblock %}

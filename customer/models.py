@@ -5,7 +5,7 @@ class Customer(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=60)
     birth_date = models.DateField()
-    cpf = models.CharField(max_length=11)
+    cpf = models.CharField(max_length=14)
 
     email = models.EmailField()  
     area_code = models.CharField(max_length=3)
@@ -27,7 +27,7 @@ class Customer(models.Model):
         return f"{self.first_name} {self.last_name}"
     
     def get_full_phone_number(self):
-        return f"({self.area_code}) {self.phone_number}"
+        return f"{self.area_code} {self.phone_number}"
 
     def get_full_name(self):
         return f"{self.first_name} {self.last_name}"

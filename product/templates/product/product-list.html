@@ -1,0 +1,37 @@
+{% extends "model-page.html" %}
+
+{% block content %}
+<div class="content">
+    <div class="sub-menu">
+        <div>
+            <a href="#">Estoque</a>
+            <a href="#">Prospects</a>            
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <div class="table">
+        <div class="table-header">
+            <div class="table-collum">Nome</div>
+            <div class="table-collum">Descrição</div>
+            <div class="table-collum">Preço Venda</div>
+            <div class="table-collum">Quantidade</div>
+            <div class="table-collum">Ações</div>
+        </div>
+        <div class="table-row">
+            {% for product in product_list %}
+            <div class="table-collum"> {{product.product_name}} </div>
+            <div class="table-collum"> {{product.description}} </div>
+            <div class="table-collum"> {{product.sale_price}} </div>
+            <div class="table-collum"> {{product.quantity}} </div>
+            <div class="table-collum"> 
+                <button type="button" class="button button-danger">Detalhes</button>
+                <button type="button" class="button button-danger">Editar</button>
+                <button type="button" class="button button-danger">Excluir</button>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

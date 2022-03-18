@@ -12,3 +12,18 @@ monitorar equipe de vendas e seus respectivos resultados
 python -v 3.8
 django
 
+
+- [ ] views
+    - [x] customer
+    - [ ] product
+    - [ ] sellers
+
+- [ ] models
+    - [x] customer
+    - [x] product
+    - [ ] sellers
+
+- [ ] models
+    - [ ] customer
+    - [ ] product
+    - [ ] sellers

@@ -1,13 +1,14 @@
-<div class="menu">
-    <div class="menu_logo">
-        <a href={% url 'index' %}>CRM</a>
+<div id="header-menu">
+    <div class="logo">
+        <a href={% url 'index' %}>SUALOGO</a>
     </div>
-    <nav class="menu_nav">
+    <div class="menu">
         <ul>
             <li><a href="{% url 'customer:customer-list' %}">Clientes</a></li>
-            <li><a href="#">Produtos</a></li>
+            <li><a href="{% url 'product:product-list' %}">Produtos</a></li>
+            <li><a href="{% url 'seller:seller-list' %}">Vendedores</a></li>
             <li><a href="#">Relatorio</a></li>
             <li><a href="#">Dashboard</a></li>
         </ul>
-    </nav>
+    </div>
 </div>
