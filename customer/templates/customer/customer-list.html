@@ -4,6 +4,7 @@
 <div class="content">
     <div class="sub-menu">
         <div>
+            <a href={% url "customer:customer-create" %}>Novo Cadastro</a>
             <a href="#">Leads</a>
             <a href="#">Prospects</a>            
         </div>
@@ -19,8 +20,8 @@
             <div class="table-collum">Email</div>
             <div class="table-collum">Ações</div>
         </div>
+        {% for customer in customer_list %}
         <div class="table-row">
-            {% for customer in customer_list %}
             <div class="table-collum"> {{customer.get_full_name}} </div>
             <div class="table-collum"> {{customer.get_full_city}} </div>
             <div class="table-collum"> {{customer.get_full_phone_number}} </div>
@@ -30,8 +31,8 @@
                 <button type="button" class="button button-danger">Editar</button>
                 <button type="button" class="button button-danger">Excluir</button>
             </div>
-            {% endfor %}
         </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}

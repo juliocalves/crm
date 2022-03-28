@@ -26,8 +26,15 @@ footer {
     border-radius: 6px;
     background: #6C809A;
     color: #fff;
+    font-weight: bold;
 
     cursor: pointer;
+}
+
+.button-save{
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
 }
 /*Estilo Header*/
 #header-menu{
@@ -127,6 +134,7 @@ footer {
 .table-header, .table-row{
    display: flex;
    justify-content: flex-start;
+   margin-bottom: 5px;
 }
 .table-collum{
     flex: 1;
@@ -134,4 +142,93 @@ footer {
 .table-header div {
    font-size: 18px;
    font-weight: bold;
+}
+
+/*Estilo Form*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    gap:25px;
+}
+.form-section{
+    width: 92%;
+    height: 500px;
+    border: 2px solid #C4C4C4;
+    border-radius: 15px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.40);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.form-section-category {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item span {
+    color: #262626;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-item input {
+    background: #6C809A;
+    border-radius: 8px;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px;
+    height: 30px;
+}
+
+.identification-first-name{
+    width: 250px;
+}
+.identification-last-name{
+    width: 400px;
+}
+.identification-birth-date{
+    width: 200px;
+}
+.identification-cpf{
+    width: 250px;
+}
+.contact-email{
+    width: 400px;
+}
+.contact-area-code{
+    width: 100px;
+}
+.contact-phone-number{
+    width: 200px;
+}
+.address-cep{
+    width: 100px;
+}
+.address-country{
+    width: 200px;
+}
+.address-state{
+    width: 200px;
+}
+.address-city{
+    width: 200px;
+}
+.address-street{
+    width: 300px;
+}
+.address-street-number{
+    width: 100px;
 }
